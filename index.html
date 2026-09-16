@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADUSANKA ENTERPRISES</title>
+  
+ <link rel="stylesheet" href="App.css"> 
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="MADUSANKA Photography specializes in capturing life's most precious moments. Professional wedding, portrait, and commercial photography services.">
+
+    <!-- Open Graph Meta Tags for Social Media Previews -->
+    <meta property="og:title" content="MADUSANKA Photography - Capturing Life's Precious Moments">
+    <meta property="og:description" content="Professional photography services specializing in weddings, portraits, and commercial photography. preserving your special memories forever.">
+    <meta property="og:image" content="https://tmpfiles.org/dl/wZwFquGjzhgA/file.jpg">
+    <meta property="og:url" content="https://madu-photography.example.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MADUSANKA Photography">
+    <meta name="twitter:description" content="Professional photography services for weddings, portraits, and commercial needs.">
+    <meta name="twitter:image" content="https://i.ibb.co/NdczhNhS/be4ab03a154e.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/NdczhNhS/be4ab03a154e.jpg">
+
+    <!-- Linking Google Fonts For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+</head>
+<body>
+    <!-- User Widget with Visitor Count -->
+    <div class="user-widget">
+        <div class="user-count" id="userCount">
+            <i class="fas fa-users"></i> <span id="totalVisits">0</span> Visitors
+        </div>
+    </div>
+
+    <!-- Admin Login Button -->
+    <div class="admin-login">
+        <button class="admin-login-btn" id="adminLoginBtn">
+            <i class="fas fa-lock"></i> Admin Login
+        </button>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="adminPanel">
+        <span class="admin-panel-close" id="closeAdminPanel">&times;</span>
+        <h2>Admin Panel</h2>
+        <p>For admin access, please contact:</p>
+        <div class="contact-info">
+            <a href="https://wa.me/94756331255" target="_blank">
+                <i class="fab fa-whatsapp"></i> +94 75 633 1255
+            </a>
+        </div>
+        
+        <div class="form-group">
+            <label for="adminImageUrl">Image URL</label>
+            <input type="text" class="form-control" id="adminImageUrl" placeholder="Image URL">
+        </div>
+        <div class="form-group">
+            <label for="adminImageAlt">Image Description</label>
+            <input type="text" class="form-control" id="adminImageAlt" placeholder="Image Description">
+        </div>
+        <div class="form-group">
+            <img id="imagePreview" class="image-preview" src="" alt="Preview" style="display: none;">
+        </div>
+        <button class="btn" id="adminAddImageBtn">Add Image</button>
+        
+        <div class="image-list" id="imageList">
+            <h3>Manage Images</h3>
+            <!-- Images will be listed here -->
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Admin Login</h2>
+            <p style="text-align: center; margin-bottom: 20px;">For admin access, please contact:</p>
+            <div class="contact-info" style="justify-content: center; margin-bottom: 20px;">
+                <a href="https://wa.me/94756331255" target="_blank">
+                    <i class="fab fa-whatsapp"></i> +94 75 633 1255
+                </a>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="adminUsername" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="adminPassword" placeholder="Password">
+            </div>
+            <button class="btn" id="loginSubmit">Login</button>
+            <p id="loginMessage" style="margin-top: 15px; color: #ff4444; text-align: center;"></p>
+        </div>
+    </div>
+
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">
+            <img src="https://files.catbox.moe/6tjpen.jpg" alt="MADUSANKA ENTERPRISES Logo">
+        </div>
+        <h1>MADUSANKA ENTERPRISES</h1>
+        <p class="tagline">Strong, Stylish & Affordable Plastic Products</p>
+        <div class="header-buttons">
+            <a href="#gallery" class="btn-link">View Items</a>
+            <a href="#about" class="btn-link">About us</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to MADUSANKA ENTERPRISES, your trusted destination for high-quality plastic products and household essentials. We are committed to providing durable, affordable, and stylish plastic items that meet the everyday needs of our customers.</p>
+                    <p>At MADUSANKA ENTERPRISES, customer satisfaction is our priority. We carefully select quality products to ensure reliability, practicality, and value for money for every home and business.</p>
+                    
+                    <p>From household plasticware to storage solutions and daily-use items, we offer a wide range of products designed to make your life easier and more convenient.</p>
+                    
+                    <p>With friendly service and a commitment to quality, MADUSANKA ENTERPRISES continues to serve customers with trust and excellence every day.</p>
+                    
+                    <!-- WhatsApp Contact Button -->
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://wa.me/94756331255" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Contact us on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://litter.catbox.moe/vdxy9p.jpg" alt="About MADUSANKA Photography">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid" id="photoGallery">
+                <!-- Gallery items will be dynamically added here -->
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/4nqksl.jpg" alt="MADUSANKA">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!---<section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>Capture your special day with beautiful, timeless photographs that tell the story of your wedding.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Portrait Sessions</h3>
+                    <p>Professional portrait sessions for individuals, couples, and families in stunning locations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Commercial Photography</h3>
+                    <p>High-quality product and commercial photography for businesses and brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>--->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://wa.me/94756331255" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="contact-info">
+                <a href="https://wa.me/94756331255" target="_blank">
+                    <i class="fab fa-whatsapp"></i> +94 75 633 1255
+                </a>
+            </div>
+            <p>&copy; 2026 Madusanka Enterprises. All Rights Reserved.</p>
+            <!---<p id="pageStats" style="margin-top: 10px; font-size: 0.9rem; color: #aaa;">
+                <span id="totalVisits">0</span> total visits
+            </p>--->
+        </div>
+    </footer>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
